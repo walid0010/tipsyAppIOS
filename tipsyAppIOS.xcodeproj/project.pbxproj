@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		D6EB225A26ADC0AE00E4F48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB225926ADC0AE00E4F48D /* AppDelegate.swift */; };
 		D6EB225C26ADC0AE00E4F48D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB225B26ADC0AE00E4F48D /* SceneDelegate.swift */; };
-		D6EB225E26ADC0AE00E4F48D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB225D26ADC0AE00E4F48D /* ViewController.swift */; };
 		D6EB226126ADC0AE00E4F48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EB225F26ADC0AE00E4F48D /* Main.storyboard */; };
 		D6EB226326ADC0AE00E4F48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EB226226ADC0AE00E4F48D /* Assets.xcassets */; };
 		D6EB226626ADC0AE00E4F48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EB226426ADC0AE00E4F48D /* LaunchScreen.storyboard */; };
+		D6EB227226ADD89600E4F48D /* calculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB227126ADD89600E4F48D /* calculatorViewController.swift */; };
+		D6EB227426ADD8D700E4F48D /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB227326ADD8D700E4F48D /* resultViewController.swift */; };
+		D6EB227626ADEA8300E4F48D /* Tipsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB227526ADEA8300E4F48D /* Tipsy.swift */; };
+		D6EB227826ADEAA500E4F48D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB227726ADEAA500E4F48D /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6EB225626ADC0AE00E4F48D /* tipsyAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipsyAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EB225926ADC0AE00E4F48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EB225B26ADC0AE00E4F48D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6EB225D26ADC0AE00E4F48D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6EB226026ADC0AE00E4F48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6EB226226ADC0AE00E4F48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6EB226526ADC0AE00E4F48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6EB226726ADC0AE00E4F48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EB227126ADD89600E4F48D /* calculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorViewController.swift; sourceTree = "<group>"; };
+		D6EB227326ADD8D700E4F48D /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		D6EB227526ADEA8300E4F48D /* Tipsy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipsy.swift; sourceTree = "<group>"; };
+		D6EB227726ADEAA500E4F48D /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				D6EB225926ADC0AE00E4F48D /* AppDelegate.swift */,
 				D6EB225B26ADC0AE00E4F48D /* SceneDelegate.swift */,
-				D6EB225D26ADC0AE00E4F48D /* ViewController.swift */,
-				D6EB225F26ADC0AE00E4F48D /* Main.storyboard */,
+				D6EB227026ADC0FB00E4F48D /* model */,
+				D6EB226F26ADC0EB00E4F48D /* controller */,
+				D6EB226D26ADC0CB00E4F48D /* view */,
 				D6EB226226ADC0AE00E4F48D /* Assets.xcassets */,
 				D6EB226426ADC0AE00E4F48D /* LaunchScreen.storyboard */,
 				D6EB226726ADC0AE00E4F48D /* Info.plist */,
 			);
 			path = tipsyAppIOS;
+			sourceTree = "<group>";
+		};
+		D6EB226D26ADC0CB00E4F48D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D6EB225F26ADC0AE00E4F48D /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D6EB226F26ADC0EB00E4F48D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6EB227126ADD89600E4F48D /* calculatorViewController.swift */,
+				D6EB227326ADD8D700E4F48D /* resultViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D6EB227026ADC0FB00E4F48D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D6EB227526ADEA8300E4F48D /* Tipsy.swift */,
+				D6EB227726ADEAA500E4F48D /* CalculatorBrain.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6EB225E26ADC0AE00E4F48D /* ViewController.swift in Sources */,
+				D6EB227826ADEAA500E4F48D /* CalculatorBrain.swift in Sources */,
+				D6EB227626ADEA8300E4F48D /* Tipsy.swift in Sources */,
+				D6EB227226ADD89600E4F48D /* calculatorViewController.swift in Sources */,
 				D6EB225A26ADC0AE00E4F48D /* AppDelegate.swift in Sources */,
 				D6EB225C26ADC0AE00E4F48D /* SceneDelegate.swift in Sources */,
+				D6EB227426ADD8D700E4F48D /* resultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8LFKVJKW8;
 				INFOPLIST_FILE = tipsyAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8LFKVJKW8;
 				INFOPLIST_FILE = tipsyAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
